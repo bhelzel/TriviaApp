@@ -9,12 +9,12 @@ using System.Text.Encodings.Web;
 
 namespace TriviaApp.Controllers
 {
-    public class QuestionController : Controller
+    public class QuestionsController : Controller
     {
    
-        public string Index()
+        public IActionResult Index()
         {
-            return HtmlEncoder.Default.Encode("What year did the Wright brothers first take flight?");
+            return View();
         }
 
         public string Answer() => HtmlEncoder.Default.Encode("1903");
