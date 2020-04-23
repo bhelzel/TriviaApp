@@ -53,10 +53,10 @@ namespace TriviaApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
                     name: "Question",
-                    pattern: "{controller=Question}/{action=Index}");
+                    pattern: "{controller=Questions}/{action=Index}");
                 endpoints.MapControllerRoute(
                     name: "Answer",
-                    pattern: "{controller=Question}/{action=Answer}");
+                    pattern: "{controller=Questions}/{action=Answer}");
             });
         }
     }
